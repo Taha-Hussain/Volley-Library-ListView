@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_row_selector"
+    android:padding="8dp">
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/imgBillionaire"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="8dp" />
+
+    <!--<!– Name of billionaire –>-->
+    <TextView
+        android:id="@+id/billionairename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imgBillionaire"
+        android:layout_toRightOf="@+id/imgBillionaire"
+        android:text="Name"
+        android:textSize="@dimen/name"
+        android:textStyle="bold" />
+
+    <!--<!– Worth –>-->
+
+    <TextView
+        android:id="@+id/worth"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/billionairename"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@+id/imgBillionaire"
+        android:text="Worth"
+        android:textSize="@dimen/worth" />
+
+    <!--<!– Source –>-->
+    <TextView
+        android:id="@+id/source"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/worth"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/imgBillionaire"
+        android:text="Source"
+        android:textColor="@color/wealthsource"
+        android:textSize="@dimen/source" />
+
+    <!--<!– Year –>-->
+    <TextView
+        android:id="@+id/inYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/source"
+        android:text="Year"
+        android:textColor="@color/year"
+        android:textSize="@dimen/InYear" />
+
+</RelativeLayout>
